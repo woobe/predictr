@@ -1,7 +1,7 @@
 Package: predictr
 Type: Package
 Title: Streamlined routines for developing and evaluating predictive models in R
-Version: 0.1.0
+Version: 0.0.1
 Date: 2015-05-05
 Authors@R: c(
     person("Jo-fai", "Chow", email = "jofai.chow@gmail.com", role = c("aut", "cre"))
@@ -11,6 +11,8 @@ Description: A collection of my own machine learning helper functions.
 License: MIT
 Depends:
     R (>= 3.0.0),
-    caret
+    caret,
+    mlbench,
+    doParallel
 Imports:
     ggplot2
