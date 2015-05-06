@@ -75,15 +75,16 @@ select_features <- function(x, y,
   ## Stop
   stopCluster(cl)
 
-  ##
+  ## Summarise
   df_summary <- data.frame(Variables = colnames(x), N_Chosen = colSums(results), P_Chosen = colSums(results) / n_run)
   opt_var <- as.character(df_summary[which(df_summary$P_Chosen >= n_cutoff), ]$Variables)
 
-  ## Print
-  if (verbose) {
+  ## print summary
+  cat("[predictr]:", length(opt_var), "out of", ncol(x), "predictors have been chosen for best OOB performance.\n")
 
-    # print summary
-    cat("[predictr]:", length(opt_var), "out of", ncol(x), "predictors have been chosen for best OOB performance.\n")
+
+  ## Print more
+  if (verbose) {
 
     cat("\n[predictr]: Summary of RFE:\n")
     print(df_summary)
