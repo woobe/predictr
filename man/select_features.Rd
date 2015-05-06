@@ -4,24 +4,14 @@
 \alias{select_features}
 \title{Feature Selection using Caret's Random Forest Approach}
 \usage{
-select_features(x, y, n_core = 4, n_fold = 10, n_repeat = 1,
-  n_size = c(2, 4, 6, 8), verbose = TRUE)
+select_features(x, y, n_core = 8, n_cv_fold = 10, n_cv_repeat = 1,
+  n_run = 20, n_maxsamp = 1000, n_size = c(2:10), n_cutoff = 0.6,
+  verbose = TRUE)
 }
 \arguments{
 \item{x}{a data frame or matrix of predictors (x).}
 
 \item{y}{target (numeric or factor)}
-
-\item{n_core}{number of CPU cores (set it to 1 for single core)}
-
-\item{n_fold}{number of cross-validation folds}
-
-\item{n_repeat}{number of repeated CV}
-
-\item{n_size}{number of predictors to be tested}
-
-\item{verbose}{display results (TRUE)
-#'}
 }
 \description{
 This function determines the best combination of predictors.
