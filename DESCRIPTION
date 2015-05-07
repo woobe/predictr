@@ -14,6 +14,8 @@ Depends:
     caret,
     mlbench,
     foreach,
-    doParallel
+    doParallel,
+    Metrics,
+    dummies
 Imports:
     ggplot2
