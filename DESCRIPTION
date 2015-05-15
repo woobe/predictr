@@ -16,6 +16,8 @@ Depends:
     foreach,
     doParallel,
     Metrics,
-    dummies
+    dummies,
+    dplyr
 Imports:
-    ggplot2
+    ggplot2,
+    xgboost
