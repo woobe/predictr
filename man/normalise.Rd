@@ -4,7 +4,7 @@
 \alias{normalise}
 \title{Normalise a data frame or matrix}
 \usage{
-normalise(x, method = "range")
+normalise(x, method = c("center", "scale"))
 }
 \arguments{
 \item{x}{a data frame or matrix.}

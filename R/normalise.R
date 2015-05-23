@@ -14,7 +14,7 @@
 #'
 #' @export
 
-normalise <- function(x, method = "range") {
+normalise <- function(x, method = c("center", "scale")) {
   pp <- preProcess(x, method)
   return(predict(pp, x))
 }
