@@ -15,3 +15,5 @@ vignettes/*.pdf
 
 # Temp files
 temp.R
+test.R
+temp_data.rda
