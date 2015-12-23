@@ -2,6 +2,7 @@
 
 export(SL_train_reg_xgb)
 export(batch_write)
+export(eval_xgb_kappa)
 export(eval_xgb_rmpse)
 export(get_mode)
 export(multi2ova)
