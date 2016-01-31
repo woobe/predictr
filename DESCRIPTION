@@ -1,6 +1,6 @@
 Package: predictr
 Type: Package
-Title: Streamlined routines for developing and evaluating predictive models in R
+Title: My favourite routines for developing and evaluating predictive models in R
 Version: 0.0.2
 Date: 2015-12-19
 Authors@R: c(
